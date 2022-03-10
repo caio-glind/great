@@ -1,0 +1,7 @@
+   <div class="card">
+                <img src="https://a-static.mlcdn.com.br/618x463/tenis-adidas-coreracer-masculino/netshoes/nqq-4635-c67-43/2b9db73105382aa5ed0e1718ef426abd.jpg" alt="">
+                <h3>Air force </h3>
+                <p class="preco">R$150,00</p>
+                <p><b>Desção Do Produto:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button>emcomenda</button>
+            </div><!--****card******-->

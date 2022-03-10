@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{     
+     
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;                                                                                                
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+/*------barra----------------*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    backdrop-filter: blur(25px);
+    background: none;
+}
+::-webkit-scrollbar-button{
+    display: none;
+    background-color: none;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgba(17, 17, 17, 0.397);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(17, 17, 17, 0.637);
+
+}
+/*---------------------------confiduração geral do projeto---------------------------------------------*/
+.flex{
+    display: flex;
+}
+
+
+/*---------------------------menu--------------------------------------------- */
+header
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 90%;
+    padding: 40px 100px ;
+    z-index:10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo
+{
+color: #111;
+}
+header .logo
+{
+    color: #fff;
+    font-weight:700;
+    font-size:2em;
+    text-decoration: none;
+}
+header .logo span
+{
+    color:#ff0157
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+
+}
+header .navigation.active
+{
+width: 100%;
+height: 100%;
+position:fixed;
+top:0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: #fff;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration:none;
+    color:#fff;
+    font-weight: 300;
+}
+header.sticky .navigation li a
+{
+color:#111;
+}
+header .navigation li a:hover
+{
+color:#ff0157;
+}
+header img{
+    width: 3ch;
+    height: 3ch;
+}
+/*---------------------------banner--------------------------------------------- */
+.banner{
+    position: relative;
+    top: -7.5ch;
+    width: 100%;
+    height: 63.9ch;
+    background-image: url('/img/baner-teste.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.banner .content
+{
+    
+    position: relative;
+    left: 16%;
+    top: 40%;
+    max-width:900px;
+    text-align: center;
+}
+.banner .content  h2
+{
+font-size: 5em;
+color:#fff;
+
+}
+.banner .content  p{
+    position: relative;
+    font-size: 1.5em;
+    color:#fff;
+    top: -5ch;
+}
+.banner .content  hr{
+    position: relative;
+    top: -8ch;
+    
+}
+/*---------------------------produtos--------------------------------------------- */
+.produtos{
+    position: relative;
+    width: 100%;
+    height:60ch ;
+    color: #fff;
+   
+    top: -7.5ch;
+   
+}
+.grupoDeProdutos{
+    position: relative;
+    padding: 2ch 5ch;
+  
+}
+
+
+.produtos .card{
+    position: relative;
+    top: 5.5ch;
+    width: 25ch;
+    height: 42ch;
+    /*background: #001;*/
+    color: #000;
+    margin-left: 5ch;
+    box-shadow:0 5px 20px rgba(71, 139, 228, 0.952);
+
+}
+.produtos .card img{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 50%;
+    transition: 1s;
+}
+/*.produtos .card img:hover{
+    opacity: 0.15;
+}*/
+.produtos .card  .imgB{
+    position: relative;
+    top: -21.7ch;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+
+}
+.produtos .card button{
+    position: relative;
+    width: 15ch;
+    height: 5ch;
+    border: 2px solid rgb(24, 28, 218);
+    border-radius: 20px;
+    top: -7ch;
+    left: 10ch;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.produtos .card button:hover{
+    border: none;
+    color: #fff;
+    background: #ff0157;
+}
+.produtos .card h3{
+    position: relative;
+    top: -2ch;
+    color: #F5BD02;
+    text-align: center;
+    font-size: 29px;
+    
+}
+.produtos .card .parcela{
+    position: relative;
+    width: 14ch;
+    top: -8ch;
+    left: 5ch;
+    color:#000 ;
+    border: 1px solid #004;
+}
+.card p{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+}
+.produtos .card .preco{
+    position: relative;
+    top:-4ch;
+    margin: 14px;
+    font-size: 30px;
+    text-align: right;
+}
+.produtos .texto{
+    position: relative;
+    top: 0ch;
+}
+/*------------------------------------roda pé----------------------------------------------------*/
+footer{
+    position: relative;
+    background-color: #fff;
+    color: #001;
+    height: 40vh;
+    top: 30ch;
+    
+}
+footer p{
+    cursor: pointer;
+}
+footer p:hover{
+    color: #F15;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    box-sizing: border-box;
+    color: #001;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.178);
+}
+#map{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 35vw;
+    height: 30vh;
+    border-radius: 30px;
+    position: relative;
+}
+#info{
+    margin-right: 5vw;
+    margin-top: 5vh;
+    width: 25vw;
+   
+    text-align: justify;
+}
+.midias{
+    
+    width: 100%;
+    display: inline-flex;
+}
+.midias img{
+    width: 4ch;
+    cursor: pointer;
+    
+}
+.map{
+    margin: 5ch;
+    width: 60ch;
+    height: 20ch;
+    border-radius: 20px;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.377);
+}
+
+@media (max-width:800px)
+
+/*--------------menu------------------------ */
+{
+   
+    header,
+    header.sticky
+    {
+    padding:  5px 35px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+   header .navigation.active
+    {
+     width: 100%;
+     height: calc(100% - 68px);
+     position: fixed;
+     top:-10px;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;    
+     flex-direction: column;
+     background: #fff;
+    }
+    .header .navigation li
+    {
+     list-style: none;
+     margin-left: 0;
+    }
+    .header .navigation li a
+    {
+      text-emphasis: none;
+      color:#111;
+      font-size: 1.6em;
+      font-weight: 300;
+    }
+    .menutoggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url("https://github.com/caio-glind/-saite/blob/main/menu.png?raw=true");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menutoggle.active
+    {
+        background:url("https://github.com/caio-glind/-saite/blob/main/close.png?raw=true");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 5;
+      
+
+    }
+    header.sticky   .menutoggle
+    {
+        filter: invert(1);
+    }
+    .banner .content{
+        position: relative;
+        top: 20%;
+        left:0%;
+    }
+    .banner .content  hr{
+        position: relative;
+        width: 80%;
+    }
+/*----------------------------produto--------------------------------------*/
+    .grupoDeProdutos{
+        position: relative;
+        padding: 2ch 5ch;
+        display: block;
+    
+    }
+
+    .produtos{
+        display: block;
+    }
+    .produtos .card{
+        position: relative;
+        top: -6ch;
+        width: 24ch;
+        height: 40ch;
+        margin-top: 5ch;
+        margin-left: 2ch;
+    }
+    .produtos .card button{
+        width: 15ch;
+        height: 5ch;
+        top: -9ch;
+        left: 10ch;
+        
+    }
+    .produtos .card  .imgB{
+        position: relative;
+        top: -17.2ch;
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+    
+    }
+    .produtos .texto{
+        position: relative;
+        top: 0ch;
+    }
+
+
+/*-------------------------------------------roda pe --------------------------------------------*/
+    
+.infoma h1{
+    position: relative;
+    top: -15ch;
+    font-size: 40px;
+    }
+    .infoma{
+        
+        top: -10ch;
+    }
+     
+    .pagamento{
+        top: -30ch;
+    }
+    .carrinho button{
+        margin-left: 5ch;
+    }
+    .produtos .card{
+        position: relative;
+        top: -6ch;
+        width: 24ch;
+        height: 40ch;
+        margin-top: 5ch;
+        margin-left: 2ch;
+    }
+
+
+    footer{
+        position: relative;
+        background-color: #fff;
+        color: #001;
+        height: 40vh;
+        top: 320ch;
+        
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 70px;
+        box-sizing: border-box;
+    }
+    .map{
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 90vw;
+        height: 30vh;
+        background-image: url("../img/map.png");
+        background-color: thistle;
+        border: solid 5px rgb(78, 10, 141);
+        border-radius: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #info{
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 90vw;
+        text-align: justify;
+    }
+    #midias{
+        width: 100%;
+        display: inline-flex;
+    }
+    #insta{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 1vw;
+    }
+    #fb{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 1vw;
+       
+    }
+    #wpp{
+        width: 8vw;
+        height: 8vw;
+        
+    }
+
+}
