@@ -30,6 +30,7 @@ body{
 /*---------------------------confiduração geral do projeto---------------------------------------------*/
 .flex{
     display: flex;
+    margin: 5ch;
 }
 
 
@@ -152,21 +153,6 @@ color:#fff;
     
 }
 /*---------------------------produtos--------------------------------------------- */
-.produtos{
-    position: relative;
-    width: 100%;
-    height:60ch ;
-    color: #fff;
-   
-    top: -7.5ch;
-   
-}
-.grupoDeProdutos{
-    position: relative;
-    padding: 2ch 5ch;
-  
-}
-
 
 .produtos .card{
     position: relative;
@@ -245,6 +231,81 @@ color:#fff;
     position: relative;
     top: 0ch;
 }
+/*---------------grande--------------------*/
+.produtos .cardG{
+    position: relative;
+    top: 5.5ch;
+    width: 25ch;
+    height: 42ch;
+    /*background: #001;*/
+    color: #000;
+    margin-left: 5ch;
+    box-shadow:0 5px 20px rgba(71, 139, 228, 0.952);
+
+}
+.produtos .cardG img{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 50%;
+    transition: 1s;
+}
+/*.produtos .card img:hover{
+    opacity: 0.15;
+}*/
+.produtos .cardG  .imgB{
+    position: relative;
+    top: -21.7ch;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+
+}
+.produtos .cardG button{
+    position: relative;
+    width: 15ch;
+    height: 5ch;
+    border: 2px solid rgb(24, 28, 218);
+    border-radius: 20px;
+    top: -7ch;
+    left: 10ch;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.produtos .cardG button:hover{
+    border: none;
+    color: #fff;
+    background: #ff0157;
+}
+.produtos .cardG h3{
+    position: relative;
+    top: -2ch;
+    color: #F5BD02;
+    text-align: center;
+    font-size: 29px;
+    
+}
+.produtos .cardG .parcela{
+    position: relative;
+    width: 14ch;
+    top: -8ch;
+    left: 5ch;
+    color:#000 ;
+    border: 1px solid #004;
+}
+.cardG p{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+}
+.produtos .cardG .preco{
+    position: relative;
+    top:-4ch;
+    margin: 14px;
+    font-size: 30px;
+    text-align: right;
+}
+
 /*------------------------------------roda pé----------------------------------------------------*/
 footer{
     position: relative;
@@ -305,6 +366,8 @@ footer p:hover{
 
 /*--------------menu------------------------ */
 {
+   
+   
    
     header,
     header.sticky
@@ -381,6 +444,9 @@ footer p:hover{
         display: block;
     
     }
+    .flex{
+        margin: 0ch;
+    }
 
     .produtos{
         display: block;
@@ -412,6 +478,19 @@ footer p:hover{
         position: relative;
         top: 0ch;
     }
+    /*-----------grande--------*/
+    .produtos .cardG{
+        position: relative;
+        top: -3ch;
+        width: 25ch;
+        height: 42ch;
+        /*background: #001;*/
+        color: #000;
+        margin-left: 2ch;
+        box-shadow:0 5px 20px rgba(71, 139, 228, 0.952);
+    
+    }
+
 
 
 /*-------------------------------------------roda pe --------------------------------------------*/

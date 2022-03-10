@@ -1,39 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-body{     
-     
-    margin: 0;  
-    padding: 0;
-    box-sizing: border-box;                                                                                                
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-/*------barra----------------*/
-::-webkit-scrollbar{
-    width: 10px;
-}
-::-webkit-scrollbar-track{
-    backdrop-filter: blur(25px);
-    background: none;
-}
-::-webkit-scrollbar-button{
-    display: none;
-    background-color: none;
-}
-::-webkit-scrollbar-thumb{
-    border-radius: 20px;
-    background-color: rgba(17, 17, 17, 0.397);
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(17, 17, 17, 0.637);
 
-}
-/*---------------------------confiduração geral do projeto---------------------------------------------*/
-.flex{
-    display: flex;
-}
-
-
-/*---------------------------menu--------------------------------------------- */
+/*--------------------menu-------------------------*/
 header
 {
     position: fixed;
@@ -48,78 +14,12 @@ header
     transition: 0.5s;
 
 }
-header.sticky
-{
-    background: #fff;
-    padding: 10px 100px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.05);
-}
-header.sticky .logo
-{
-color: #111;
-}
-header .logo
-{
-    color: #fff;
-    font-weight:700;
-    font-size:2em;
-    text-decoration: none;
-}
-header .logo span
-{
-    color:#ff0157
-}
-header .navigation
-{
-    position: relative;
-    display: flex;
-
-}
-header .navigation.active
-{
-width: 100%;
-height: 100%;
-position:fixed;
-top:0;
-left: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background: #fff;
-}
-header .navigation li
-{
-    list-style: none;
-    margin-left: 30px;
-}
-header .navigation li a
-{
-    text-decoration:none;
-    color:#fff;
-    font-weight: 300;
-}
-header.sticky .navigation li a
-{
-color:#111;
-}
-header .navigation li a:hover
-{
-color:#ff0157;
-}
-header img{
-    width: 3ch;
-    height: 3ch;
-}
-/*--------------------------------------------------menu-------------------------------------*/
-
+/*----------------------------produtos----------------------------*/
 .produto{
     z-index: 0px;
  display: flex;
  /*background: #f15;*/
 }
-
-
 #carouselExampleFade{
     position: relative;
     margin-left: 5%;
@@ -127,11 +27,9 @@ header img{
     width: 50ch;
     height: 50ch;
 }
-
 #carouselExampleFade img{
     width: 40ch;
     height: 40ch;
-    
 }
 .infoma{
     text-align: justify;
@@ -140,7 +38,6 @@ header img{
     position: relative;
     width: 30ch;
     height: 40ch;
-
 }
 .pagamento{
     margin-left: 4ch;
@@ -149,172 +46,50 @@ header img{
     width: 30ch;
     height: 40ch;
     list-style: none;
-
 }
 .pagamento ul {
     list-style: none;
-
 }
 .carrinho button{
     background: #d75413;
     color: #fff;
     border-radius: 20px;
     border: none;
-    
     height: 5ch;
     width: 20ch;
     animation: boto 1.5s infinite;
     animation-direction: alternate-reverse;
 }
-/*-------------------------------roda pe------------------------------------*/
-footer{
-    background-color: #fff;
-    color: #001;
-    height: 40vh;
-    
-}
-footer p{
-    cursor: pointer;
-}
-footer p:hover{
-    color: #F15;
-}
-#footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-    box-sizing: border-box;
-    color: #001;
-    box-shadow:0 5px 20px rgba(0, 0, 0, 0.178);
-}
-#map{
-    margin-left: 5vw;
-    margin-top: 5vh;
-    width: 35vw;
-    height: 30vh;
-    border-radius: 30px;
-    position: relative;
-}
-#info{
-    margin-right: 5vw;
-    margin-top: 5vh;
-    width: 25vw;
-   
-    text-align: justify;
-}
-.midias{
-    
-    width: 100%;
-    display: inline-flex;
-}
-.midias img{
-    width: 4ch;
-    cursor: pointer;
-    
-}
-.map{
-    margin: 5ch;
-    width: 60ch;
-    height: 20ch;
-    border-radius: 20px;
-    box-shadow:0 5px 20px rgba(0, 0, 0, 0.377);
-}
-
 @keyframes boto{
     0%{
-         transform: translateX(2ch);
-         transform: translateY(2ch);
+        transform: translateX(2ch);
+        transform: translateY(2ch);
         height: 5ch;
         width: 20ch;
         top: 2ch;
-        
     }
    100%{
     transform: translateX(3ch);
-    
        height: 7ch;
        width: 23ch;
        top: 4ch;
    } 
 }
 @media(max-width:1000px){
-    
-/*---------------------------menu----------------------------------*/
-    header,
-    header.sticky
-    {
-    padding:  10px 35px;
-    }
-    header .navigation
-    {
-        display: none;
-    }
-   header .navigation.active
-    {
-     width: 100%;
-     height: calc(100% - 68px);
-     position: fixed;
-     top:60px;
-     left: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;    
-     flex-direction: column;
-     background: #fff;
-    }
-    .header .navigation li
-    {
-     list-style: none;
-     margin-left: 0;
-    }
-    .header .navigation li a
-    {
-      text-emphasis: none;
-      color:#111;
-      font-size: 1.6em;
-      font-weight: 300;
-    }
-    .menutoggle
-    {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background: url("https://github.com/caio-glind/-saite/blob/main/menu.png?raw=true");
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-    }
-    .menutoggle.active
-    {
-        background:url("https://github.com/caio-glind/-saite/blob/main/close.png?raw=true");
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-      
-
-    }
-    header.sticky   .menutoggle
-    {
-        filter: invert(1);
-    }
     /*---------------------------produto----------------------------------*/
     .produto{
         display: block;
         position: relative;
         margin: 2ch;
        }
-       
-       
        #carouselExampleFade{
            position: relative;
-           margin-left: -1ch;
+           margin-left: -0.5ch;
            margin-top: 10ch;
            width: 35ch;
            height: 35ch;
-           top: 5ch;
+           top: 6ch;
        }
-       
        #carouselExampleFade img{
            width: 35ch;
            height: 35ch;  
@@ -326,77 +101,27 @@ footer p:hover{
         width: 30ch;
         height: 40ch;
         list-style: none;
-    
     }
-
     .infoma h1{
     position: relative;
     top: -15ch;
     font-size: 40px;
     }
-    .infoma{
-        
+    .infoma{  
         top: -10ch;
     }
-     
     .pagamento{
-        top: -30ch;
+        top: -36ch;
     }
     .carrinho button{
         margin-left: 5ch;
     }
-
-
+    /*------------roda pé----------------------------*/
     footer{
-        
-        height: 80vh;
-    }
-    #footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 70px;
-        box-sizing: border-box;
-    }
-    .map{
-        margin-left: 5vw;
-        margin-top: 5vh;
-        width: 90vw;
-        height: 30vh;
-        background-image: url("../img/map.png");
-        background-color: thistle;
-        border: solid 5px rgb(78, 10, 141);
-        border-radius: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         position: relative;
+        background-color: #fff;
+        color: #001;
+        height: 40vh;   
+        top:0ch;
     }
-    #info{
-        margin-left: 5vw;
-        margin-top: 5vh;
-        width: 90vw;
-        text-align: justify;
-    }
-    #midias{
-        width: 100%;
-        display: inline-flex;
-    }
-    #insta{
-        width: 8vw;
-        height: 8vw;
-        margin-right: 1vw;
-    }
-    #fb{
-        width: 8vw;
-        height: 8vw;
-        margin-right: 1vw;
-       
-    }
-    #wpp{
-        width: 8vw;
-        height: 8vw;
-        
-    }
-
 }
